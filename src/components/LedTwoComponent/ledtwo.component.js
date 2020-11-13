@@ -4,7 +4,7 @@ import firebaseDb from "../../firebase";
 import LEDBLUE from "../img/blue.png";
 import LEDGREY from "../img/grey.png";
 
-export default function LedTwoComponent() {
+export default function LedTwoComponent({ status }) {
   const [ledTwo, setLedTwo] = useState(null);
 
   useEffect(() => {

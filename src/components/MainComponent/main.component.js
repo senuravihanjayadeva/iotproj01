@@ -1,10 +1,11 @@
 import React from "react";
-import firebaseDb from "../../firebase";
+
 import "./mainStyle.css";
 
 import LedoneComponent from "../LedOneComponent/ledone.component";
 import LedTwoComponent from "../LedTwoComponent/ledtwo.component";
 import BuzzerComponent from "../BuzzerComponent/buzzer.component";
+import Speechtotext from "../SpeechToTextComponent/speechtotext.component";
 
 export default function MainComponent() {
   return (
@@ -14,6 +15,7 @@ export default function MainComponent() {
       </div>
       <div className="container">
         <div className="row">
+          <Speechtotext />
           {/* Column 1 start */}
           <LedoneComponent />
           {/* Column 1 end */}
